@@ -10,7 +10,10 @@
 
 //Sorting
 
-//because i didn't know exactly how to manipulate data and have access to them outside the function, when they are loaded to HTML from JSON (like in Ajax request folder) I did it like that - which I know isn't the best way and exactly correct. In this solution I had access to array with employees personal data and I could do sorting and filtering
+//because i didn't know exactly how to manipulate data and have access to them outside the function,
+// when they are loaded to HTML from JSON (like in Ajax request folder) I did it like that
+// - which I know isn't the best way and exactly correct. In this solution I had access 
+//to array with employees personal data and I could do sorting and filtering
 
 
 
