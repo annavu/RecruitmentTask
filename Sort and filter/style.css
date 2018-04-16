@@ -1,0 +1,66 @@
+body {
+  color: #666;
+  font-weight: bold;
+  background: #ddd;
+}
+
+
+.container input {
+    background: #ccc;
+    width: 175px;
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+th {
+  background: #ccc;
+  box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+  border: none; 
+  color: #777;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  width: 120px;
+}
+
+th:after {
+  content: "";
+  display: none;
+  width: 0;
+  height: 0;
+  margin-top: -5px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+th.asc:after {
+  display: block;
+  border-style: solid;
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent #888 transparent;
+}
+
+th.desc:after {
+  display: block;
+  border-style: solid;
+  border-width: 10px 5px 0 5px;
+  border-color: #888 transparent transparent transparent;}
+
+th:last-child, th:first-child {
+  width: 120px;
+  padding: 10px 0;
+}
+
+.row, .item {
+  text-align: center;
+}
+

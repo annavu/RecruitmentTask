@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Recruitment task</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Employees</h1>
+    <input class="input input-id" type="text" placeholder="Search for ID.." >
+    <input class="input input-firstName" type="text" placeholder="Search for first name.." >
+    <input class="input input-lastName" type="text" placeholder="Search for last name..">
+    <input class="input input-company" type="text" placeholder="Search for company..">
+    <input class="input input-note" type="text" placeholder="Search for note..">
+    <br><br>
+   
+    <p>Click on each header to sort values:<p>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Date of birth</th>
+          <th>Company</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tbody class="employees-list"></tbody>
+    </table>
+  </div>
+
+  
+  <script src="main2.js"></script>
+</body>
+</html>
