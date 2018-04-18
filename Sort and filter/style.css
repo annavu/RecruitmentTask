@@ -5,17 +5,38 @@ body {
 }
 
 
+.container{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
 .container input {
     background: #ccc;
     width: 175px;
     box-shadow: 0 1px 5px rgba(104,104,104,0.8);
 }
 
+.datepicker {
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+    border:none;
+    padding: 10px;
+    position:absolute;
+}
+
+
+
+input::-webkit-inner-spin-button, input::-webkit-clear-button {
+    display: none;
+}
 
 p {
   margin: 0;
   padding: 0;
+    
 }
+
 
 
 th {
@@ -63,4 +84,6 @@ th:last-child, th:first-child {
 .row, .item {
   text-align: center;
 }
+
+
 

@@ -251,5 +251,50 @@ filterInputArr.forEach(function(input) {
 });
 
 
+let datepicker = document.querySelector(".datepicker");
+
+
+//listen for date change
+datepicker.addEventListener("change", filterDate);
+
+function filterDate() {
+  let filterValue = document.querySelector(".datepicker").value;
+  console.log(filterValue);
+  
+  let tr = table.getElementsByTagName("tr");
+   
+  let trArr = Array.from(table.getElementsByTagName("tr"));
+ 
+  
+
+  for(i=1; i<trArr.length; i++) {
+    let td = tr[i].getElementsByTagName("td")[3];
+    //convert date to array
+    let tdArr = td.textContent.match(/\d+/g);
+    console.log(tdArr);
+    //create proper date format from array
+    if(tdArr[0].length == 1 && tdArr[1].length == 1) {
+      tdfrom = tdArr[2] + "-"+"0"+ tdArr[1] + "-" + "0" +tdArr[0];
+        } else if(tdArr[0].length == 1) {
+      tdfrom = tdArr[2] + "-"+ tdArr[1] + "-" + "0" +tdArr[0];
+        } else {
+      tdfrom = tdArr[2] + "-"+ tdArr[1] + "-" + tdArr[0];
+        }
+
+  
+    let tdDate = new Date(tdfrom);
+    //compare date from datepicker with date from table-check if this date is in table    
+    if(tdfrom.indexOf(filterValue) != -1) {
+    console.log("jest");
+    tr[i].style.display = "";
+      } else {
+    tr[i].style.display = "none";
+      }
+  }
+
+}
+
+
+
 
 
